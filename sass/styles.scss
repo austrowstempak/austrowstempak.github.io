@@ -821,7 +821,7 @@ RSVP form
         left: 30px;
         transform: translateY(-50%);
       }
-      i.fa-user, i.fa-users, i.fa-envelope, .fa-key {
+      i.fa-user, i.fa-users, i.fa-envelope, .fa-key, .fa-cutlery, .fa-music, .fa-bus {
         font-size: 14px;
         position: absolute;
         top: 50%;
@@ -863,7 +863,7 @@ RSVP form
         appearance: none; // remove native styling (especially on Safari/Chrome)
         -webkit-appearance: none;
         -moz-appearance: none;
-        color: $form-placeholder; // or another text color
+        //color: $form-placeholder; // or another text color
       }
       .select-arrow {
         position: absolute;

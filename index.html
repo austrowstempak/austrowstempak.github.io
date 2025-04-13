@@ -513,7 +513,7 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h3>What are you waiting for?</h3>
-                <p>We would greatly appreciate if you could RSVP before August 23<sup>rd</sup>.<br/>
+                <p>We would greatly appreciate if you could RSVP before August 23<sup>rd</sup>, 2025.<br/>
                 <strong>Please submit a separate RSVP for each person in your party 😊</strong></p>
                 <form id="rsvp-form" class="rsvp-form"
                       action=""
@@ -521,36 +521,49 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
-                                                                     required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
                                 <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
+                                                                 placeholder="Full name"
                                                                  required>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Husband/Wife or kids"
-                                                                  required>
+                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
+                                                                     placeholder="Email"
+                                                                     required>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-user"></i><select name="city" id="cityname">
-                                    <option value="Boston">Boston</option>
-                                    <option value="Cambridge">Cambridge</option>
+                                <i class="fa fa-cutlery"></i><select name="dinner" id="dinner-selection" required>
+                                    <option disabled="disabled" selected="selected">Dinner selection:</option>
+                                    <option value="Chicken">Chicken</option>
+                                    <option value="Roast beef">Roast beef</option>
+                                    <option value="Vegetarian">Vegetarian</option>
+                                    <option value="Vegan">Vegan</option>
+                                    <option value="Kid's meal">Kid's meal (age 10 and under)</option>
                                 </select><i class="fa fa-chevron-down select-arrow"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-bus"></i><select name="shuttle" id="shuttle-requested" required>
+                                    <option disabled="disabled" selected="selected">Shuttle requested?</option>
+                                    <option value="Yes">Will ride the shuttle</option>
+                                    <option value="No">No thank you</option>
+                                </select><i class="fa fa-chevron-down select-arrow"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-music"></i><input name="name" class=""
+                                                                 placeholder="(Optional) Song request">
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6">
