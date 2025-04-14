@@ -187,20 +187,20 @@ $(document).ready(function () {
             title: "Nicole and James' Wedding",
 
             // Event start date
-            start: new Date('Sept 27, 2025 15:00'),
+            start: new Date('Sept 27, 2025 16:00'),
 
             // Event duration (IN MINUTES)
             // duration: 120,
 
             // You can also choose to set an end time
             // If an end time is set, this will take precedence over duration
-            end: new Date('Sept 27, 2025 11:00'),
+            end: new Date('Sept 27, 2025 22:30'),
 
             // Event Address
             address: '8636 Pekin Road Novelty, OH 44072',
 
             // Event Description
-            description: "We can't wait to see you on our big day. For any questions or issues, please contact [TODO]."
+            description: "We can't wait to see you on our big day. For any questions or issues, please contact austrowj@gmail.com"
         }
     });
 
