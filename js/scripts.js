@@ -137,7 +137,7 @@ $(document).ready(function () {
     });
 
     /********************** Social Share buttons ***********************/
-    var share_bar = document.getElementsByClassName('share-bar');
+    //var share_bar = document.getElementsByClassName('share-bar');
     var po = document.createElement('script');
     po.type = 'text/javascript';
     po.async = true;
@@ -145,6 +145,7 @@ $(document).ready(function () {
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(po, s);
 
+    /* We don't need the share bar, just remove it.
     for (var i = 0; i < share_bar.length; i++) {
         var html = '<iframe allowtransparency="true" frameborder="0" scrolling="no"' +
             'src="https://platform.twitter.com/widgets/tweet_button.html?url=' + encodeURIComponent(window.location) + '&amp;text=' + encodeURIComponent(document.title) + '&amp;via=ramswarooppatra&amp;hashtags=ramandantara&amp;count=horizontal"' +
@@ -160,6 +161,7 @@ $(document).ready(function () {
         share_bar[i].innerHTML = html;
         share_bar[i].style.display = 'inline-block';
     }
+    */
 
     /********************** Embed youtube video *********************/
     $('.player').YTPlayer();
