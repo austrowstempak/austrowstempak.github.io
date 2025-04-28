@@ -324,15 +324,29 @@
     
 </section>
 
-<div class="container">
-    <div class="row">
-        <div class="text-center">
-            <iframe
-                src="https://www.google.com/maps/d/embed?mid=1B-pqtyfix6MXcW3iVgmCyBHyjWECEeE&ehbc=2E312F&noprof=1"
-                width="640" height="480"
-                allowfullscreen
-            ></iframe>
-        </div>
+<style>
+    .map-full-bleed {
+      width: 100vw; /* full viewport width */
+      margin-left: calc(50% - 50vw); /* center it */
+    }
+    .map-full-bleed .ratio {
+      height: 60vh; /* adjust map height nicely */
+      min-height: 300px;
+    }
+    .map-full-bleed iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+</style>
+
+<div class="map-full-bleed">
+    <div class="ratio ratio-16x9">
+        <iframe
+            src="https://www.google.com/maps/d/embed?mid=1B-pqtyfix6MXcW3iVgmCyBHyjWECEeE&ehbc=2E312F&noprof=1"
+            allowfullscreen
+            loading="lazy">
+        </iframe>
     </div>
 </div>
 
@@ -441,10 +455,35 @@
         <h3>How do I get there?</h3>
         <p>It's way easier than you think!</p>
     </div>
-    <div class="text-center">
-        <iframe src="https://www.google.com/maps/d/embed?mid=16TqzLc9zFPY_Z7uRB9cVFJU4emJCthM&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
-    </div>
 </section>
+
+<style>
+    .map-dir-bleed {
+      width: 100vw; /* full viewport width */
+      margin-left: calc(50% - 50vw); /* center it */
+    }
+    .map-dir-bleed .ratio {
+      height: 60vh; /* adjust map height nicely */
+      min-height: 300px;
+    }
+    .map-dir-bleed iframe {
+      width: 60%;
+      height: 100%;
+      border: 0;
+    }
+</style>
+
+<div class="text-center">
+    <div class="map-dir-bleed">
+        <div class="ratio ratio-16x9">
+        <iframe
+            src="https://www.google.com/maps/d/embed?mid=16TqzLc9zFPY_Z7uRB9cVFJU4emJCthM&ehbc=2E312F&noprof=1" 
+            allowfullscreen
+            loading="lazy">
+        </iframe>
+        </div>
+    </div>
+</div>
 
 <section class="rsvp text-center" id="rsvp">
 
